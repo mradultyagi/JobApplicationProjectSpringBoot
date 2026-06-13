@@ -2,9 +2,13 @@ package com.telusko.soring_boot_rest.model;
 
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+@Entity
 public class JobPost {
 
+    @Id
     private int postId;
     private String postProfile;
     private String postDesc;
